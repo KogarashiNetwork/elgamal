@@ -1,0 +1,25 @@
+[package]
+authors = [
+    'ashWhiteHat<phantomofrotten@gmail.com>',
+    'KiriosK<KiriosK@yandex.ru>'
+]
+name = "zero-elgamal"
+description = 'lifted elgamal encryption implementation'
+version = "0.1.11"
+edition = "2021"
+license = "Apache-2.0"
+homepage = 'https://github.com/KogarashiNetwork/Kogarashi'
+repository = 'https://github.com/KogarashiNetwork/elgamal'
+readme = 'README.md'
+
+[dependencies]
+parity-scale-codec = { version = "2.1.0", default-features = false, features = ["derive"] }
+zero-jubjub = { version = "0.1.11", default-features = false }
+zero-crypto = { version = "0.1.11", default-features = false }
+zero-pairing = { version = "0.1.11", default-features = false }
+serde = { version = "1.0.102", default-features = false, features = ["derive"] }
+num-traits = { version = "0.2.15", default-features = false }
+
+[dev-dependencies]
+rand = { version = "0.8" }
+rand_core = { version="0.6.4", default-features = false }
