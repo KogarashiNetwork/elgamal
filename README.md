@@ -1,5 +1,5 @@
 # ElGamal Encryption 
-[![CI](https://github.com/KogarashiNetwork/elgamal/actions/workflows/ci.yml/badge.svg)](https://github.com/KogarashiNetwork/elgamal/actions/workflows/ci.yml) [![crates.io badge](https://img.shields.io/crates/v/zero-elgamal.svg)](https://crates.io/crates/zero-elgamal) [![GitHub license](https://img.shields.io/badge/license-GPL3%2FApache2-blue)](#LICENSE) [![dependency status](https://deps.rs/crate/zero-elgamal/0.1.11/status.svg)](https://deps.rs/crate/zero-elgamal/0.1.11)
+[![CI](https://github.com/KogarashiNetwork/elgamal/actions/workflows/ci.yml/badge.svg)](https://github.com/KogarashiNetwork/elgamal/actions/workflows/ci.yml) [![crates.io badge](https://img.shields.io/crates/v/zero-elgamal.svg)](https://crates.io/crates/zero-elgamal) [![GitHub license](https://img.shields.io/badge/license-GPL3%2FApache2-blue)](#LICENSE) [![codecov](https://codecov.io/gh/KogarashiNetwork/elgamal/branch/master/graph/badge.svg?token=QL91AJN6A4)](https://codecov.io/gh/KogarashiNetwork/elgamal) [![dependency status](https://deps.rs/crate/zero-elgamal/0.1.11/status.svg)](https://deps.rs/crate/zero-elgamal/0.1.11)
 
 This crate provides additive homomorphic ElGamal encryption over jubjub curve and also supports fully `no_std` and [`parity-scale-codec`](https://github.com/paritytech/parity-scale-codec).
 
