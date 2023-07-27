@@ -3,7 +3,7 @@ authors = [
     'ashWhiteHat<phantomofrotten@gmail.com>',
     'KiriosK<KiriosK@yandex.ru>'
 ]
-name = "lifted-elgamal"
+name = "she-elgamal"
 description = 'lifted elgamal encryption implementation'
 version = "0.0.10"
 edition = "2021"
