@@ -16,9 +16,9 @@ checksum = "d468802bab17cbc0cc575e9b053f41e72aa36bfa6b7f55e3529ffa43161b97fa"
 
 [[package]]
 name = "bls-12-381"
-version = "0.0.10"
+version = "0.0.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4e3a742c4da006d8a93a776781a64a35d4c288f60b2a531b9511b1eddd45b5e7"
+checksum = "9a7566e94a7e3e480f27375ffaf4da3b993927581e71cfd9f55be25e4c89b07f"
 dependencies = [
  "parity-scale-codec",
  "rand_core",
@@ -40,9 +40,9 @@ checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
 name = "ec-pairing"
-version = "0.0.10"
+version = "0.0.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "aed8e0f6c0d7b177584f2c59dd83af948fcb613b92457d2b87a461331a613eac"
+checksum = "f0938911d9b1263b0037208e51a1168ea8e1cb5fc29ff1b0a814f1c51ed25fbc"
 dependencies = [
  "bls-12-381",
  "jub-jub",
@@ -52,9 +52,9 @@ dependencies = [
 
 [[package]]
 name = "getrandom"
-version = "0.2.9"
+version = "0.2.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c85e1d9ab2eadba7e5040d4e09cbd6d072b76a557ad64e797c2cb9d4da21d7e4"
+checksum = "be4136b2a15dd319360be1c07d9933517ccf0be8f16bf62a3bee4f0d618df427"
 dependencies = [
  "cfg-if",
  "libc",
@@ -90,9 +90,9 @@ dependencies = [
 
 [[package]]
 name = "jub-jub"
-version = "0.0.10"
+version = "0.0.14"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6daf91f1e3a4585ac60da6ee3d5cecc6ab35efadfd67c14b128dd91b9b419b75"
+checksum = "9594dcd111e9610a2b4f36a9c52ae30c6c02542e69505ecdedb9c4dc26289517"
 dependencies = [
  "bls-12-381",
  "parity-scale-codec",
@@ -103,23 +103,9 @@ dependencies = [
 
 [[package]]
 name = "libc"
-version = "0.2.142"
+version = "0.2.147"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6a987beff54b60ffa6d51982e1aa1146bc42f19bd26be28b0586f252fccf5317"
-
-[[package]]
-name = "lifted-elgamal"
-version = "0.0.10"
-dependencies = [
- "ec-pairing",
- "jub-jub",
- "num-traits",
- "parity-scale-codec",
- "rand",
- "rand_core",
- "serde",
- "zkstd",
-]
+checksum = "b4668fb0ea861c1df094127ac5f1da3409a82116a4ba74fca2e58ef927159bb3"
 
 [[package]]
 name = "memchr"
@@ -257,6 +243,20 @@ dependencies = [
 ]
 
 [[package]]
+name = "she-elgamal"
+version = "0.0.11"
+dependencies = [
+ "ec-pairing",
+ "jub-jub",
+ "num-traits",
+ "parity-scale-codec",
+ "rand",
+ "rand_core",
+ "serde",
+ "zkstd",
+]
+
+[[package]]
 name = "sp-std"
 version = "3.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -324,9 +324,9 @@ dependencies = [
 
 [[package]]
 name = "zkstd"
-version = "0.0.10"
+version = "0.0.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b979db769dc5d78b4ef00cb85e932a1be04f08459610eafd9055996ee76e7e13"
+checksum = "1723ddf295d3f38212b6c94efafedf801fc780781b1f3659b47c3c1fa4f0a7e3"
 dependencies = [
  "parity-scale-codec",
  "paste",
