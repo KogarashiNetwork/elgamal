@@ -16,9 +16,9 @@ checksum = "d468802bab17cbc0cc575e9b053f41e72aa36bfa6b7f55e3529ffa43161b97fa"
 
 [[package]]
 name = "bls-12-381"
-version = "0.0.12"
+version = "0.0.23"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9a7566e94a7e3e480f27375ffaf4da3b993927581e71cfd9f55be25e4c89b07f"
+checksum = "7563581d8de33f0fba835eddef616e2c037324dc62a86a5bf56df7811478d735"
 dependencies = [
  "parity-scale-codec",
  "rand_core",
@@ -37,18 +37,6 @@ name = "cfg-if"
 version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
-
-[[package]]
-name = "ec-pairing"
-version = "0.0.11"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f0938911d9b1263b0037208e51a1168ea8e1cb5fc29ff1b0a814f1c51ed25fbc"
-dependencies = [
- "bls-12-381",
- "jub-jub",
- "parity-scale-codec",
- "zkstd",
-]
 
 [[package]]
 name = "getrandom"
@@ -90,9 +78,9 @@ dependencies = [
 
 [[package]]
 name = "jub-jub"
-version = "0.0.14"
+version = "0.0.20"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9594dcd111e9610a2b4f36a9c52ae30c6c02542e69505ecdedb9c4dc26289517"
+checksum = "d459c1a3b3fc528441bb134256bb02c27f74c961546ae8ad08337aa99d1ee8ed"
 dependencies = [
  "bls-12-381",
  "parity-scale-codec",
@@ -244,9 +232,8 @@ dependencies = [
 
 [[package]]
 name = "she-elgamal"
-version = "0.0.11"
+version = "0.0.12"
 dependencies = [
- "ec-pairing",
  "jub-jub",
  "num-traits",
  "parity-scale-codec",
@@ -324,12 +311,13 @@ dependencies = [
 
 [[package]]
 name = "zkstd"
-version = "0.0.12"
+version = "0.0.22"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1723ddf295d3f38212b6c94efafedf801fc780781b1f3659b47c3c1fa4f0a7e3"
+checksum = "df10d1a2921983e804f88238e54dad6c6c839a8a4d3716d9711022a34b765b03"
 dependencies = [
  "parity-scale-codec",
  "paste",
  "rand_core",
+ "serde",
  "sp-std",
 ]
